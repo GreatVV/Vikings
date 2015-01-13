@@ -1,0 +1,101 @@
+
+skeleton.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Drone-2
+  rotate: true
+  xy: 573, 2
+  size: 152, 399
+  orig: 162, 399
+  offset: 0, 0
+  index: -1
+Drone-2-b
+  rotate: true
+  xy: 573, 156
+  size: 152, 399
+  orig: 162, 399
+  offset: 0, 0
+  index: -1
+Drone-3
+  rotate: true
+  xy: 690, 539
+  size: 155, 326
+  orig: 155, 326
+  offset: 0, 0
+  index: -1
+Drone-3-b
+  rotate: true
+  xy: 690, 853
+  size: 155, 326
+  orig: 155, 326
+  offset: 0, 0
+  index: -1
+Drone-4
+  rotate: true
+  xy: 690, 382
+  size: 155, 326
+  orig: 155, 326
+  offset: 0, 0
+  index: -1
+Drone-4-b
+  rotate: true
+  xy: 690, 696
+  size: 155, 326
+  orig: 155, 326
+  offset: 0, 0
+  index: -1
+Drone-5-b
+  rotate: true
+  xy: 2, 91
+  size: 217, 569
+  orig: 217, 569
+  offset: 0, 0
+  index: -1
+Drone-7
+  rotate: false
+  xy: 2, 310
+  size: 686, 698
+  orig: 686, 698
+  offset: 0, 0
+  index: -1
+Drone-9
+  rotate: false
+  xy: 974, 346
+  size: 34, 34
+  orig: 34, 34
+  offset: 0, 0
+  index: -1
+
+skeleton2.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Drone-1
+  rotate: false
+  xy: 2, 573
+  size: 506, 412
+  orig: 512, 412
+  offset: 0, 0
+  index: -1
+Drone-5
+  rotate: false
+  xy: 2, 2
+  size: 217, 569
+  orig: 217, 569
+  offset: 0, 0
+  index: -1
+Drone-6
+  rotate: false
+  xy: 438, 2
+  size: 215, 569
+  orig: 217, 569
+  offset: 2, 0
+  index: -1
+Drone-6-b
+  rotate: false
+  xy: 221, 2
+  size: 215, 569
+  orig: 217, 569
+  offset: 2, 0
+  index: -1
