@@ -1503,8 +1503,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6547a838de82cfb4f851e875473b9b84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Weapon: {fileID: 947639129}
-  Text: {fileID: 544066388}
 --- !u!114 &845029723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1910,7 +1908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 828411ccd8b8b9a44a55aa8160af89f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletSpawnPosition: {x: .454773933, y: .616748333, z: 0}
+  BulletSpawnPosition: {x: .899999976, y: .616748333, z: 0}
   BulletSpeed: 30
   Direction: {x: 1, y: 0, z: 0}
   bulletPrefab: {fileID: 100002, guid: 961bb9af300102445a743e9590b97d06, type: 2}
@@ -3306,6 +3304,10 @@ Prefab:
     - target: {fileID: 11418732, guid: 94a50d321c1873d46bf84b5b8b700f8a, type: 2}
       propertyPath: loop
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: 94a50d321c1873d46bf84b5b8b700f8a, type: 2}
+      propertyPath: BulletSpawnPosition.x
+      value: .899999976
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 94a50d321c1873d46bf84b5b8b700f8a, type: 2}
