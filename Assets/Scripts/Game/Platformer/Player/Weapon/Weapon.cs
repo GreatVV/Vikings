@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    public bool IsCloseCombat = false;
+
     public Vector3 BulletSpawnPosition;
     public float BulletSpeed;
     public Vector3 Direction;
