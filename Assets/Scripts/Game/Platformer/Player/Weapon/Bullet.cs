@@ -24,4 +24,9 @@ public class Bullet : MonoBehaviour
     {
         Move(Time.deltaTime);
     }
+
+    public void Hit()
+    {
+        Destroy(gameObject);
+    }
 }

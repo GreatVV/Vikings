@@ -2,6 +2,7 @@
 using System.Collections;
 
 [RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class DestroyableObstacles : MonoBehaviour
 {
 
@@ -17,6 +18,8 @@ public class DestroyableObstacles : MonoBehaviour
         {
             if (bullet.Weapon.IsCloseCombat && ByCloseCombat || (!bullet.Weapon.IsCloseCombat && ByRangeCombat))
             {
+                bullet.Hit();
+
                 if (SpawnOnHit)
                 {
                     var go = Instantiate(SpawnOnHit) as GameObject;
