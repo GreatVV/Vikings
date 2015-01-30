@@ -132,6 +132,7 @@
      <Compile Include="Assets\2DPlatformController\ThirdParty\StandardAssets\Joystick.cs" />
      <Compile Include="Assets\2DPlatformController\ThirdParty\iTween.cs" />
      <Compile Include="Assets\Scripts\Game\Platformer\Enemy\AutoShoot.cs" />
+     <Compile Include="Assets\Scripts\Game\Platformer\Enviroment\DestroyableObstacles.cs" />
      <Compile Include="Assets\Scripts\Game\Platformer\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Game\Platformer\Player\SpineAnimationController.cs" />
      <Compile Include="Assets\Scripts\Game\Platformer\Player\Weapon\Bullet.cs" />
@@ -220,6 +221,7 @@
      <None Include="Assets\Units\Drone\skeleton.atlas.txt" />
      <None Include="Assets\spine-unity\Shaders\Bones.shader" />
      <None Include="Assets\UnityTestTools\changelog.txt" />
+     <None Include="Assets\Units\Warrior\skeleton.atlas.txt" />
      <None Include="Assets\2DPlatformController\Documentation\ReadMeFirst.txt" />
      <None Include="Assets\spine-unity\Shaders\Skeleton.shader" />
      <None Include="Assets\2DPlatformController\2DVersion\Samples\SupportingAssets\Textures\Scenery\tiles_spritesheet.xml" />
