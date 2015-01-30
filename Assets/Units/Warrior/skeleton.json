@@ -119,6 +119,7 @@
 	}
 },
 "animations": {
+	"idle": {},
 	"reload": {
 		"bones": {
 			"hand front": {
