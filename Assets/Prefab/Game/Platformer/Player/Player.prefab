@@ -533,7 +533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsCloseCombat: 0
-  BulletSpawnPosition: {x: .899999976, y: .616748333, z: 0}
+  BulletSpawnPosition: {x: .672145844, y: .488172531, z: 0}
   BulletSpeed: 30
   Direction: {x: 1, y: 0, z: 0}
   bulletPrefab: {fileID: 100002, guid: 961bb9af300102445a743e9590b97d06, type: 2}
@@ -575,8 +575,8 @@ MonoBehaviour:
   immutableTriangles: 0
   logErrors: 0
   timeScale: 1
-  loop: 0
-  _animationName: 
+  loop: 1
+  _animationName: idle
 --- !u!114 &11491318
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -589,7 +589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 11400006}
-  idleName: shooting
+  idleName: idle
   moveName: walking
   SkeletonAnimation: {fileID: 11491316}
 --- !u!124 &12400000
@@ -605,7 +605,7 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100010}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
