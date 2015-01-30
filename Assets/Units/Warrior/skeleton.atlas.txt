@@ -1,0 +1,174 @@
+
+skeleton.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+warrior sprites/hand-back-fingers2
+  rotate: false
+  xy: 863, 680
+  size: 125, 133
+  orig: 125, 133
+  offset: 0, 0
+  index: -1
+warrior sprites/hand-front-fingers
+  rotate: true
+  xy: 863, 815
+  size: 207, 159
+  orig: 207, 159
+  offset: 0, 0
+  index: -1
+warrior sprites/leg-back-bot-2
+  rotate: true
+  xy: 863, 506
+  size: 172, 80
+  orig: 172, 80
+  offset: 0, 0
+  index: -1
+warrior sprites/muzzle-flash-2
+  rotate: false
+  xy: 2, 384
+  size: 859, 638
+  orig: 859, 638
+  offset: 0, 0
+  index: -1
+warrior sprites/weapon-2
+  rotate: false
+  xy: 2, 2
+  size: 945, 380
+  orig: 945, 380
+  offset: 0, 0
+  index: -1
+warrior sprites/weapon-2a
+  rotate: true
+  xy: 945, 531
+  size: 147, 47
+  orig: 147, 47
+  offset: 0, 0
+  index: -1
+
+skeleton2.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+warrior sprites/ammo-clip
+  rotate: false
+  xy: 833, 84
+  size: 172, 206
+  orig: 172, 206
+  offset: 0, 0
+  index: -1
+warrior sprites/body
+  rotate: false
+  xy: 2, 234
+  size: 543, 764
+  orig: 543, 764
+  offset: 0, 0
+  index: -1
+warrior sprites/hand-back-mid
+  rotate: true
+  xy: 839, 646
+  size: 352, 164
+  orig: 352, 164
+  offset: 0, 0
+  index: -1
+warrior sprites/hand-front-mid
+  rotate: true
+  xy: 839, 292
+  size: 352, 164
+  orig: 352, 164
+  offset: 0, 0
+  index: -1
+warrior sprites/leg-back-bot-1
+  rotate: false
+  xy: 547, 210
+  size: 210, 161
+  orig: 210, 161
+  offset: 0, 0
+  index: -1
+warrior sprites/leg-back-mid
+  rotate: true
+  xy: 413, 16
+  size: 192, 418
+  orig: 192, 418
+  offset: 0, 0
+  index: -1
+warrior sprites/leg-back-up
+  rotate: false
+  xy: 547, 373
+  size: 290, 625
+  orig: 290, 625
+  offset: 0, 0
+  index: -1
+warrior sprites/leg-front-bot-2
+  rotate: false
+  xy: 833, 2
+  size: 172, 80
+  orig: 172, 80
+  offset: 0, 0
+  index: -1
+warrior sprites/muzzle-flash-1
+  rotate: false
+  xy: 2, 3
+  size: 409, 229
+  orig: 409, 229
+  offset: 0, 0
+  index: -1
+
+skeleton3.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+warrior sprites/hand-back-top
+  rotate: false
+  xy: 526, 191
+  size: 448, 187
+  orig: 448, 187
+  offset: 0, 0
+  index: -1
+warrior sprites/hand-front-top
+  rotate: false
+  xy: 526, 2
+  size: 448, 187
+  orig: 448, 187
+  offset: 0, 0
+  index: -1
+warrior sprites/head
+  rotate: false
+  xy: 2, 89
+  size: 328, 334
+  orig: 328, 334
+  offset: 0, 0
+  index: -1
+warrior sprites/leg-front-mid
+  rotate: false
+  xy: 332, 5
+  size: 192, 418
+  orig: 192, 418
+  offset: 0, 0
+  index: -1
+warrior sprites/leg-front-up
+  rotate: false
+  xy: 680, 380
+  size: 290, 625
+  orig: 290, 625
+  offset: 0, 0
+  index: -1
+warrior sprites/muzzle-flash-3
+  rotate: false
+  xy: 2, 425
+  size: 676, 580
+  orig: 676, 580
+  offset: 0, 0
+  index: -1
+
+skeleton4.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+warrior sprites/leg-front-bot-1
+  rotate: false
+  xy: 2, 2
+  size: 210, 161
+  orig: 210, 161
+  offset: 0, 0
+  index: -1
