@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{9D31516E-7C54-DE7F-8D61-B46FF759ED9D}</ProjectGuid>
+	<ProjectGuid>{6AB2211F-6FC7-70E9-87EB-89D77C38380E}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>D:/soft/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>D:/soft/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -140,7 +140,6 @@
      <Compile Include="Assets\Scripts\Game\Platformer\Player\Weapon\LineBulletSpawner.cs" />
      <Compile Include="Assets\Scripts\Game\Platformer\Player\Weapon\ThreeBulletSpawner.cs" />
      <Compile Include="Assets\Scripts\Game\Platformer\Player\Weapon\Weapon.cs" />
-     <Compile Include="Assets\Scripts\UI\Temp\BulletAmount.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\AssertionComponent.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\AssertionException.cs" />
      <Compile Include="Assets\UnityTestTools\Assertions\Assertions.cs" />
@@ -217,6 +216,7 @@
      <Compile Include="Assets\spine-unity\SkeletonUtility\SkeletonUtilityKinematicShadow.cs" />
      <Compile Include="Assets\spine-unity\SkeletonUtility\SkeletonUtilitySubmeshRenderer.cs" />
      <None Include="Assets\spine-unity\Shaders\HiddenPass.shader" />
+     <None Include="Assets\Units\Player\skeleton.atlas.txt" />
      <None Include="Assets\UnityTestTools\LICENSE.txt" />
      <None Include="Assets\Units\Drone\skeleton.atlas.txt" />
      <None Include="Assets\spine-unity\Shaders\Bones.shader" />
@@ -227,7 +227,7 @@
      <None Include="Assets\2DPlatformController\2DVersion\Samples\SupportingAssets\Textures\Scenery\tiles_spritesheet.xml" />
      <None Include="Assets\spine-unity\Shaders\SkeletonLit.shader" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/soft/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
