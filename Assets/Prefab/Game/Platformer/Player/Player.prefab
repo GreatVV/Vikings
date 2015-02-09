@@ -89,9 +89,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &191318
+--- !u!1 &183400
 GameObject:
   m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 483400}
+  - 114: {fileID: 11483400}
+  m_Layer: 12
+  m_Name: Visual
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &191318
+GameObject:
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -100,7 +116,6 @@ GameObject:
   - 33: {fileID: 3391318}
   - 23: {fileID: 2391318}
   - 114: {fileID: 11491316}
-  - 114: {fileID: 11491318}
   m_Layer: 0
   m_Name: Warrior_SkeletonAnimation
   m_TagString: Untagged
@@ -140,10 +155,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53.1599998, y: -8.93999958, z: 0}
+  m_LocalPosition: {x: -37.6800003, y: -42.3800011, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 491318}
+  - {fileID: 483400}
   - {fileID: 400002}
   - {fileID: 400008}
   - {fileID: 400000}
@@ -173,6 +188,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 0
+--- !u!4 &483400
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183400}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 491318}
+  m_Father: {fileID: 400006}
+  m_RootOrder: 0
 --- !u!4 &491318
 Transform:
   m_ObjectHideFlags: 1
@@ -180,10 +208,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 191318}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0500000007, y: -.460000008, z: 0}
+  m_LocalPosition: {x: -.0499992371, y: -.459999084, z: 0}
   m_LocalScale: {x: .0713984743, y: .0713984668, z: .0713984668}
   m_Children: []
-  m_Father: {fileID: 400006}
+  m_Father: {fileID: 483400}
   m_RootOrder: 0
 --- !u!20 &2000000
 Camera:
@@ -204,7 +232,7 @@ Camera:
   near clip plane: .300000012
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 4.5
   m_Depth: -1
   m_CullingMask:
@@ -229,20 +257,18 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 66026f4f34030cf41a453eb54e0a1259, type: 2}
-  - {fileID: 2100000, guid: 047d283b76a239141b4ab1dd97f6116c, type: 2}
-  - {fileID: 2100000, guid: 6a483cb92c9f0634e85b342bea6613dc, type: 2}
-  - {fileID: 2100000, guid: 047d283b76a239141b4ab1dd97f6116c, type: 2}
-  - {fileID: 2100000, guid: aab8b45f1e831f748bbf0b6e9d8665a9, type: 2}
-  - {fileID: 2100000, guid: 047d283b76a239141b4ab1dd97f6116c, type: 2}
-  - {fileID: 2100000, guid: 6a483cb92c9f0634e85b342bea6613dc, type: 2}
-  - {fileID: 2100000, guid: 047d283b76a239141b4ab1dd97f6116c, type: 2}
-  - {fileID: 2100000, guid: 66026f4f34030cf41a453eb54e0a1259, type: 2}
-  - {fileID: 2100000, guid: 6a483cb92c9f0634e85b342bea6613dc, type: 2}
-  - {fileID: 2100000, guid: 66026f4f34030cf41a453eb54e0a1259, type: 2}
-  - {fileID: 2100000, guid: 047d283b76a239141b4ab1dd97f6116c, type: 2}
-  - {fileID: 2100000, guid: 66026f4f34030cf41a453eb54e0a1259, type: 2}
-  - {fileID: 2100000, guid: 6a483cb92c9f0634e85b342bea6613dc, type: 2}
+  - {fileID: 2100000, guid: b1e1dec5c23644d419eebbf7c3a17c03, type: 2}
+  - {fileID: 2100000, guid: c75f19ceb8db96442b6764bfc05359ec, type: 2}
+  - {fileID: 2100000, guid: b1e1dec5c23644d419eebbf7c3a17c03, type: 2}
+  - {fileID: 2100000, guid: c75f19ceb8db96442b6764bfc05359ec, type: 2}
+  - {fileID: 2100000, guid: 3d729c85658bf8e4aa4a377ca88bb8ad, type: 2}
+  - {fileID: 2100000, guid: 36ce183d08530f04b82c5eed21677ffe, type: 2}
+  - {fileID: 2100000, guid: c75f19ceb8db96442b6764bfc05359ec, type: 2}
+  - {fileID: 2100000, guid: 3d729c85658bf8e4aa4a377ca88bb8ad, type: 2}
+  - {fileID: 2100000, guid: c75f19ceb8db96442b6764bfc05359ec, type: 2}
+  - {fileID: 2100000, guid: b1e1dec5c23644d419eebbf7c3a17c03, type: 2}
+  - {fileID: 2100000, guid: 3d729c85658bf8e4aa4a377ca88bb8ad, type: 2}
+  - {fileID: 2100000, guid: b1e1dec5c23644d419eebbf7c3a17c03, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -376,12 +402,12 @@ MonoBehaviour:
   headColliders:
   - transform: {fileID: 400006}
     offset: {x: -.199996948, y: .25, z: 0}
-    distance: .550000191
+    distance: .549999237
     direction: 0
     ignoreAnglesLessThan: 0
   - transform: {fileID: 400006}
     offset: {x: .300003052, y: .25, z: 0}
-    distance: .550000191
+    distance: .549999237
     direction: 0
     ignoreAnglesLessThan: 0
   sides:
@@ -419,13 +445,13 @@ MonoBehaviour:
     walkSpeed: 5
     runSpeed: 5
     movementStyle: 0
-    jumpAtRunSpeed: 0
+    jumpAtRunSpeed: 1
     acceleration: 110
     drag: 12
     terminalVelocity: -16
     skinSize: .00999999978
   jump:
-    canDoubleJump: 0
+    canDoubleJump: 1
     jumpVelocity: 16
     doubleJumpVelocity: 10
     jumpTimer: .200000003
@@ -437,8 +463,8 @@ MonoBehaviour:
   wall:
     canWallJump: 1
     canWallSlide: 1
-    easyWallJump: 0
-    wallJumpOnlyInOppositeDirection: 0
+    easyWallJump: 1
+    wallJumpOnlyInOppositeDirection: 1
     wallSlideGravityFactor: .5
     oppositeDirectionTime: .5
     wallSlideAdditionalDistance: .0500000007
@@ -463,9 +489,9 @@ MonoBehaviour:
     climbTopDownAnimationTime: 1.33000004
     climbOffset: {x: .949999988, y: 1.92999995, z: 0}
   ledgeHanging:
-    canLedgeHang: 0
-    grabOnlyInFacingDirection: 0
-    autoGrab: 0
+    canLedgeHang: 1
+    grabOnlyInFacingDirection: 1
+    autoGrab: 1
     autoGrabDistance: .150000006
     edgeDetectionOffset: {x: .100000001, y: .400000006}
     jumpOnlyInOppositeDirection: 1
@@ -481,7 +507,7 @@ MonoBehaviour:
   crouch:
     canCrouch: 1
     canCrouchSlide: 1
-    canCrouchJump: 0
+    canCrouchJump: 1
     minVelocityForSlide: 3
     minVelocityForStopSlide: 1.75
     slideDrag: .600000024
@@ -520,7 +546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alwaysRun: 0
-  jumpAndDownForDrop: 0
+  jumpAndDownForDrop: 1
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -555,6 +581,25 @@ MonoBehaviour:
   Weapon: {fileID: 11400010}
   WeaponPosition: {x: 0, y: 0, z: 0}
   Direction: {x: 1, y: 0, z: 0}
+--- !u!114 &11483400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d10699a859542064886a027a581a4415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 11400006}
+  crouchingName: crouch
+  crouchingSlidingName: crouch
+  idleName: idle
+  runningName: runing
+  SkeletonAnimation: {fileID: 11491316}
+  slidingName: slide
+  walkingName: walking
 --- !u!114 &11491316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -566,7 +611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: 4b0881883c7d70841a97146eb0b6daeb, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 4486a41738693f94ca4a052ba401b0d3, type: 2}
   initialSkinName: default
   calculateNormals: 0
   calculateTangents: 0
@@ -576,22 +621,7 @@ MonoBehaviour:
   logErrors: 0
   timeScale: 1
   loop: 1
-  _animationName: idle
---- !u!114 &11491318
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 191318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d10699a859542064886a027a581a4415, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 11400006}
-  idleName: idle
-  moveName: walking
-  SkeletonAnimation: {fileID: 11491316}
+  _animationName: runing
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
