@@ -76,50 +76,38 @@ skeleton3.png
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
+warrior sprites/hand-back-mid
+  rotate: false
+  xy: 394, 383
+  size: 352, 164
+  orig: 352, 164
+  offset: 0, 0
+  index: -1
 warrior sprites/hand-front-mid
-  rotate: true
-  xy: 741, 553
+  rotate: false
+  xy: 2, 2
   size: 354, 276
   orig: 354, 276
   offset: 0, 0
   index: -1
 warrior sprites/leg-back-bot-1
-  rotate: true
-  xy: 623, 2
+  rotate: false
+  xy: 394, 725
   size: 403, 174
   orig: 403, 174
   offset: 0, 0
   index: -1
 warrior sprites/leg-front-bot-1
-  rotate: true
-  xy: 799, 148
+  rotate: false
+  xy: 394, 549
   size: 403, 174
   orig: 403, 174
   offset: 0, 0
   index: -1
 warrior sprites/leg-front-up
-  rotate: true
-  xy: 2, 15
+  rotate: false
+  xy: 2, 280
   size: 390, 619
   orig: 390, 619
-  offset: 0, 0
-  index: -1
-warrior sprites/run/run-1
-  rotate: false
-  xy: 2, 407
-  size: 737, 500
-  orig: 737, 500
-  offset: 0, 0
-  index: -1
-
-skeleton4.png
-format: RGBA8888
-filter: Linear,Linear
-repeat: none
-warrior sprites/hand-back-mid
-  rotate: false
-  xy: 2, 2
-  size: 352, 164
-  orig: 352, 164
   offset: 0, 0
   index: -1

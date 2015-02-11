@@ -1,0 +1,206 @@
+fileFormatVersion: 2
+guid: 827580a434b69024a809a294c245670e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: level_0
+    21300002: level_1
+    21300004: level_2
+    21300006: level_3
+    21300008: level_4
+    21300010: level_5
+    21300012: level_6
+    21300014: level_7
+    21300016: level_8
+    21300018: level_9
+    21300020: level_10
+    21300022: level_11
+    21300024: level_12
+    21300026: level_13
+    21300028: level_14
+    21300030: level_15
+    21300032: level_16
+    21300034: level_17
+    21300036: level_18
+    21300038: level_19
+    21300040: level_20
+    21300042: level_21
+    21300044: level_22
+    21300046: level_23
+    21300048: level_24
+    21300050: level_25
+    21300052: level_26
+    21300054: level_27
+    21300056: level_28
+    21300058: level_29
+    21300060: level_30
+    21300062: level_31
+    21300064: level_32
+    21300066: level_33
+    21300068: level_34
+    21300070: level_35
+    21300072: level_36
+    21300074: level_37
+    21300076: level_38
+    21300078: level_39
+    21300080: level_40
+    21300082: level_41
+    21300084: level_42
+    21300086: level_43
+    21300088: level_44
+    21300090: level_45
+    21300092: level_46
+    21300094: level_47
+    21300096: level_48
+    21300098: level_49
+    21300100: level_50
+    21300102: level_51
+    21300104: level_52
+    21300106: level_53
+    21300108: level_54
+    21300110: level_55
+    21300112: level_56
+    21300114: level_57
+    21300116: level_58
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: level_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 577
+        width: 2004
+        height: 1003
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level_1
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 578
+        width: 646
+        height: 1001
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level_2
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 578
+        width: 444
+        height: 1001
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level_3
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 30
+        width: 1004
+        height: 504
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level_4
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 451
+        width: 2001
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level_5
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 28
+        width: 1001
+        height: 339
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level_6
+      rect:
+        serializedVersion: 2
+        x: 2234
+        y: 111
+        width: 1001
+        height: 270
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level_7
+      rect:
+        serializedVersion: 2
+        x: 3282
+        y: 199
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level_8
+      rect:
+        serializedVersion: 2
+        x: 2804
+        y: 583
+        width: 86
+        height: 611
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: level_9
+      rect:
+        serializedVersion: 2
+        x: 2813
+        y: 1301
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

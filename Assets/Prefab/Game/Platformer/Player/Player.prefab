@@ -155,7 +155,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37.6800003, y: -42.3800011, z: 0}
+  m_LocalPosition: {x: -39.2799988, y: -39.9199982, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 483400}
@@ -257,12 +257,11 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: b1e1dec5c23644d419eebbf7c3a17c03, type: 2}
   - {fileID: 2100000, guid: c75f19ceb8db96442b6764bfc05359ec, type: 2}
   - {fileID: 2100000, guid: b1e1dec5c23644d419eebbf7c3a17c03, type: 2}
   - {fileID: 2100000, guid: c75f19ceb8db96442b6764bfc05359ec, type: 2}
   - {fileID: 2100000, guid: 3d729c85658bf8e4aa4a377ca88bb8ad, type: 2}
-  - {fileID: 2100000, guid: 36ce183d08530f04b82c5eed21677ffe, type: 2}
+  - {fileID: 2100000, guid: b1e1dec5c23644d419eebbf7c3a17c03, type: 2}
   - {fileID: 2100000, guid: c75f19ceb8db96442b6764bfc05359ec, type: 2}
   - {fileID: 2100000, guid: 3d729c85658bf8e4aa4a377ca88bb8ad, type: 2}
   - {fileID: 2100000, guid: c75f19ceb8db96442b6764bfc05359ec, type: 2}
@@ -373,110 +372,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34e78827900e41509efc4eb5e0629b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feetColliders:
-  - transform: {fileID: 400006}
-    offset: {x: 0, y: .200000763, z: 0}
-    distance: .700000763
-    direction: 1
-    ignoreAnglesLessThan: 0
-  - transform: {fileID: 400006}
-    offset: {x: -.150000006, y: .200000763, z: 0}
-    distance: .700000763
-    direction: 1
-    ignoreAnglesLessThan: 0
-  - transform: {fileID: 400006}
-    offset: {x: .150000006, y: .200000763, z: 0}
-    distance: .700000763
-    direction: 1
-    ignoreAnglesLessThan: 0
-  - transform: {fileID: 400006}
-    offset: {x: .300000012, y: .200000763, z: 0}
-    distance: .700000763
-    direction: 1
-    ignoreAnglesLessThan: 0
-  - transform: {fileID: 400006}
-    offset: {x: -.300000012, y: .200000763, z: 0}
-    distance: .700000763
-    direction: 1
-    ignoreAnglesLessThan: 0
-  headColliders:
-  - transform: {fileID: 400006}
-    offset: {x: -.199996948, y: .25, z: 0}
-    distance: .549999237
-    direction: 0
-    ignoreAnglesLessThan: 0
-  - transform: {fileID: 400006}
-    offset: {x: .300003052, y: .25, z: 0}
-    distance: .549999237
-    direction: 0
-    ignoreAnglesLessThan: 0
-  sides:
-  - transform: {fileID: 400006}
-    offset: {x: 0, y: .75, z: 0}
-    distance: .349998474
-    direction: 3
-    ignoreAnglesLessThan: 0
-  - transform: {fileID: 400006}
-    offset: {x: 0, y: -.459999084, z: 0}
-    distance: .349998474
-    direction: 3
-    ignoreAnglesLessThan: 0
-  - transform: {fileID: 400006}
-    offset: {x: 0, y: 0, z: 0}
-    distance: .349998474
-    direction: 3
-    ignoreAnglesLessThan: 0
-  - transform: {fileID: 400006}
-    offset: {x: 0, y: -.459999084, z: 0}
-    distance: .349998474
-    direction: 2
-    ignoreAnglesLessThan: 0
-  - transform: {fileID: 400006}
-    offset: {x: 0, y: 0, z: 0}
-    distance: .349998474
-    direction: 2
-    ignoreAnglesLessThan: 0
-  - transform: {fileID: 400006}
-    offset: {x: 0, y: .75, z: 0}
-    distance: .349998474
-    direction: 2
-    ignoreAnglesLessThan: 0
-  movement:
-    walkSpeed: 5
-    runSpeed: 5
-    movementStyle: 0
-    jumpAtRunSpeed: 1
-    acceleration: 110
-    drag: 12
-    terminalVelocity: -16
-    skinSize: .00999999978
-  jump:
-    canDoubleJump: 1
-    jumpVelocity: 16
-    doubleJumpVelocity: 10
-    jumpTimer: .200000003
-    jumpHeldTime: .25
-    jumpFrameVelocity: 25
-    drag: .25
-    fallVelocity: -1
-    inheritParentVelocityFactor: 0
-  wall:
-    canWallJump: 1
-    canWallSlide: 1
-    easyWallJump: 1
-    wallJumpOnlyInOppositeDirection: 1
-    wallSlideGravityFactor: .5
-    oppositeDirectionTime: .5
-    wallSlideAdditionalDistance: .0500000007
-    wallJumpTime: .330000013
-    edgeDetectionOffset: {x: .0500000007, y: .550000012}
-    wallJumpTag: 
-    wallJumpSpeed: {x: 3, y: 12.5}
-  slopes:
-    allowSlopes: 1
-    slopeLookAhead: .400000006
-    rotationSpeed: .300000012
-    maxRotation: 50
+  backgroundLayer: 0
+  characterInput: {fileID: 11400008}
+  climableLayer: 9
   climbing:
     autoStick: 1
     allowClimbing: 1
@@ -488,25 +386,10 @@ MonoBehaviour:
     climbTopAnimationTime: 1.5
     climbTopDownAnimationTime: 1.33000004
     climbOffset: {x: .949999988, y: 1.92999995, z: 0}
-  ledgeHanging:
-    canLedgeHang: 1
-    grabOnlyInFacingDirection: 1
-    autoGrab: 1
-    autoGrabDistance: .150000006
-    edgeDetectionOffset: {x: .100000001, y: .400000006}
-    jumpOnlyInOppositeDirection: 1
-    oppositeDirectionTime: .5
-    jumpVelocity: 11
-    hangOffset: {x: .219999999, y: -1.41999996, z: 0}
-    graspPoint: .400000006
-    graspLeeway: .100000001
-    transitionTime: .219999999
-    climbTime: 2.23000002
-    climbOffset: {x: .949999988, y: 1.92999995, z: 0}
-    ledgeDropTime: .150000006
+  controllerActive: 1
   crouch:
     canCrouch: 1
-    canCrouchSlide: 1
+    canCrouchSlide: 0
     canCrouchJump: 1
     minVelocityForSlide: 3
     minVelocityForStopSlide: 1.75
@@ -515,6 +398,120 @@ MonoBehaviour:
     heightReductionFactor: 2
     ignoredSideCollidersHigherThan: .200000003
     headDetectionDistance: 0
+  directionChecker: {fileID: 0}
+  feetColliders:
+  - direction: 1
+    distance: .700000763
+    ignoreAnglesLessThan: 0
+    offset: {x: 0, y: .200000763, z: 0}
+    transform: {fileID: 400006}
+  - direction: 1
+    distance: .700000763
+    ignoreAnglesLessThan: 0
+    offset: {x: -.150000006, y: .200000763, z: 0}
+    transform: {fileID: 400006}
+  - direction: 1
+    distance: .700000763
+    ignoreAnglesLessThan: 0
+    offset: {x: .150000006, y: .200000763, z: 0}
+    transform: {fileID: 400006}
+  - direction: 1
+    distance: .700000763
+    ignoreAnglesLessThan: 0
+    offset: {x: .300000012, y: .200000763, z: 0}
+    transform: {fileID: 400006}
+  - direction: 1
+    distance: .700000763
+    ignoreAnglesLessThan: 0
+    offset: {x: -.300000012, y: .200000763, z: 0}
+    transform: {fileID: 400006}
+  groundedLookAhead: .25
+  headColliders:
+  - direction: 0
+    distance: .549999237
+    ignoreAnglesLessThan: 0
+    offset: {x: -.308097839, y: .249996185, z: 0}
+    transform: {fileID: 400006}
+  - direction: 0
+    distance: .549999237
+    ignoreAnglesLessThan: 0
+    offset: {x: .327026367, y: .245494843, z: 0}
+    transform: {fileID: 400006}
+  jump:
+    canDoubleJump: 1
+    jumpVelocity: 16
+    doubleJumpVelocity: 10
+    jumpTimer: .200000003
+    jumpHeldTime: .25
+    jumpFrameVelocity: 25
+    drag: .25
+    fallVelocity: -1
+    inheritParentVelocityFactor: 0
+  ledgeHanging:
+    canLedgeHang: 1
+    grabOnlyInFacingDirection: 0
+    autoGrab: 1
+    autoGrabDistance: .150000006
+    edgeDetectionOffset: {x: .5, y: .400000006}
+    jumpOnlyInOppositeDirection: 1
+    oppositeDirectionTime: 0
+    jumpVelocity: 11
+    hangOffset: {x: .219999999, y: -1.41999996, z: 0}
+    graspPoint: .400000006
+    graspLeeway: .100000001
+    transitionTime: .219999999
+    climbTime: 1.20000005
+    climbOffset: {x: .949999988, y: 1.92999995, z: 0}
+    ledgeDropTime: .150000006
+  maxSpeedForIdle: .100000001
+  movement:
+    walkSpeed: 5
+    runSpeed: 5
+    movementStyle: 0
+    jumpAtRunSpeed: 1
+    acceleration: 110
+    drag: 12
+    terminalVelocity: -16
+    skinSize: .00999999978
+  passThroughLayer: 8
+  sendAnimationEventsEachFrame: 0
+  sides:
+  - direction: 3
+    distance: .349998474
+    ignoreAnglesLessThan: 0
+    offset: {x: 0, y: .75, z: 0}
+    transform: {fileID: 400006}
+  - direction: 3
+    distance: .349998474
+    ignoreAnglesLessThan: 0
+    offset: {x: 0, y: -.459999084, z: 0}
+    transform: {fileID: 400006}
+  - direction: 3
+    distance: .349998474
+    ignoreAnglesLessThan: 0
+    offset: {x: 0, y: 0, z: 0}
+    transform: {fileID: 400006}
+  - direction: 2
+    distance: .349998474
+    ignoreAnglesLessThan: 0
+    offset: {x: 0, y: -.459999084, z: 0}
+    transform: {fileID: 400006}
+  - direction: 2
+    distance: .349998474
+    ignoreAnglesLessThan: 0
+    offset: {x: 0, y: 0, z: 0}
+    transform: {fileID: 400006}
+  - direction: 2
+    distance: .349998474
+    ignoreAnglesLessThan: 0
+    offset: {x: 0, y: .75, z: 0}
+    transform: {fileID: 400006}
+  slopes:
+    allowSlopes: 1
+    slopeLookAhead: .400000006
+    rotationSpeed: .300000012
+    maxRotation: 50
+  stun: 0
   swimming:
     canSwim: 1
     swimStrokeAcceleration: {x: 0, y: 0}
@@ -523,16 +520,18 @@ MonoBehaviour:
     waterResistance: {x: 0, y: 0}
     swimStrokeTime: 0
     canRun: 1
-  stun: 0
-  backgroundLayer: 0
-  passThroughLayer: 8
-  climableLayer: 9
-  controllerActive: 1
-  sendAnimationEventsEachFrame: 0
-  groundedLookAhead: .25
-  maxSpeedForIdle: .100000001
-  characterInput: {fileID: 11400008}
-  directionChecker: {fileID: 0}
+  wall:
+    canWallJump: 1
+    canWallSlide: 1
+    easyWallJump: 0
+    wallJumpOnlyInOppositeDirection: 0
+    wallSlideGravityFactor: .100000001
+    oppositeDirectionTime: .5
+    wallSlideAdditionalDistance: .0500000007
+    wallJumpTime: .330000013
+    edgeDetectionOffset: {x: .0500000007, y: .550000012}
+    wallJumpTag: 
+    wallJumpSpeed: {x: 3, y: 12.5}
   targetSlope: 0
 --- !u!114 &11400008
 MonoBehaviour:
@@ -559,7 +558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsCloseCombat: 0
-  BulletSpawnPosition: {x: .672145844, y: .488172531, z: 0}
+  BulletSpawnPosition: {x: .672145844, y: .488174438, z: 0}
   BulletSpeed: 30
   Direction: {x: 1, y: 0, z: 0}
   bulletPrefab: {fileID: 100002, guid: 961bb9af300102445a743e9590b97d06, type: 2}
@@ -598,8 +597,14 @@ MonoBehaviour:
   idleName: idle
   runningName: runing
   SkeletonAnimation: {fileID: 11491316}
-  slidingName: slide
+  slidingName: 
   walkingName: walking
+  jumpingName: jump
+  ledge_hangingName: hang
+  holdingName: slide
+  wall_jumpingName: dash forward
+  ledge_climbingName: climb
+  wallSlidingName: slide
 --- !u!114 &11491316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -619,7 +624,7 @@ MonoBehaviour:
   renderMeshes: 1
   immutableTriangles: 0
   logErrors: 0
-  timeScale: 1
+  timeScale: 2
   loop: 1
   _animationName: runing
 --- !u!124 &12400000

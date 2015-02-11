@@ -11,6 +11,13 @@ public class SpineAnimationController : MonoBehaviour
     public SkeletonAnimation SkeletonAnimation;
     public string slidingName;
     public string walkingName;
+	public string jumpingName;
+	public string ledge_hangingName;
+	public string holdingName;
+	public string wall_jumpingName;
+	public string ledge_climbingName;
+	public string wallSlidingName;
+
 
     private int CurrentDirection
     {
@@ -58,6 +65,8 @@ public class SpineAnimationController : MonoBehaviour
             case CharacterState.AIRBORNE_CROUCH:
                 break;
             case CharacterState.WALL_SLIDING:
+			SkeletonAnimation.AnimationName = wallSlidingName;
+			SkeletonAnimation.loop = true;
                 break;
             case CharacterState.CROUCHING:
                 SkeletonAnimation.AnimationName = crouchingName;
@@ -68,6 +77,8 @@ public class SpineAnimationController : MonoBehaviour
                 SkeletonAnimation.loop = true;
                 break;
             case CharacterState.HOLDING:
+			SkeletonAnimation.AnimationName = holdingName;
+			SkeletonAnimation.loop = true;
                 break;
             case CharacterState.CLIMBING:
                 break;
@@ -76,8 +87,12 @@ public class SpineAnimationController : MonoBehaviour
             case CharacterState.CLIMB_TOP_OF_LADDER_DOWN:
                 break;
             case CharacterState.LEDGE_HANGING:
+			SkeletonAnimation.AnimationName = ledge_hangingName;
+			SkeletonAnimation.loop = true;
                 break;
             case CharacterState.LEDGE_CLIMBING:
+			SkeletonAnimation.AnimationName = ledge_climbingName;
+			SkeletonAnimation.loop = true;
                 break;
             case CharacterState.LEDGE_CLIMB_FINISHED:
                 break;
@@ -90,10 +105,14 @@ public class SpineAnimationController : MonoBehaviour
             case CharacterState.SWIMMING:
                 break;
             case CharacterState.JUMPING:
+			SkeletonAnimation.AnimationName = jumpingName;
+			SkeletonAnimation.loop = true;
                 break;
             case CharacterState.DOUBLE_JUMPING:
                 break;
             case CharacterState.WALL_JUMPING:
+			SkeletonAnimation.AnimationName = wall_jumpingName;
+			SkeletonAnimation.loop = true;
                 break;
             case CharacterState.PUSHING:
                 break;

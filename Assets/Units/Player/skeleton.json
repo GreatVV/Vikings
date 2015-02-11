@@ -74,7 +74,6 @@
 	}
 ],
 "slots": [
-	{ "name": "run-1", "bone": "root", "attachment": "warrior sprites/run/run-1" },
 	{ "name": "leg-back-mid", "bone": "bone5", "attachment": "warrior sprites/leg-back-mid" },
 	{ "name": "leg-back-bot-1", "bone": "bone6", "attachment": "warrior sprites/leg-back-bot-1" },
 	{ "name": "leg-back-up", "bone": "Leg back", "attachment": "warrior sprites/leg-back-up" },
@@ -137,9 +136,6 @@
 		},
 		"leg-front-up": {
 			"warrior sprites/leg-front-up": { "x": 241.79, "y": 21.85, "scaleX": 0.886, "scaleY": 0.886, "rotation": 79.18, "width": 390, "height": 619 }
-		},
-		"run-1": {
-			"warrior sprites/run/run-1": { "x": 401.47, "y": 714.13, "width": 737, "height": 500 }
 		}
 	}
 },
@@ -316,6 +312,11 @@
 					{ "time": 0, "x": 41.58, "y": -191.5, "curve": "stepped" },
 					{ "time": 0.3333, "x": 41.58, "y": -191.5 },
 					{ "time": 1.3333, "x": 6.79, "y": -226.76 }
+				]
+			},
+			"root": {
+				"translate": [
+					{ "time": 0, "x": 197.99, "y": 0 }
 				]
 			}
 		},
@@ -754,6 +755,10 @@
 					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
 					{ "time": 0.3333, "x": 0, "y": 0, "curve": "stepped" },
 					{ "time": 2, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.3333, "x": 1, "y": 1 }
 				]
 			},
 			"hand front": {
@@ -1032,6 +1037,10 @@
 					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
 					{ "time": 0.1666, "x": 0, "y": 0, "curve": "stepped" },
 					{ "time": 1.3333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.3333, "x": 1, "y": 1 }
 				]
 			},
 			"hand front": {
@@ -1328,6 +1337,10 @@
 					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
 					{ "time": 0.1666, "x": 0, "y": 0, "curve": "stepped" },
 					{ "time": 1.3333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.3333, "x": 1, "y": 1 }
 				]
 			},
 			"hand front": {
@@ -1409,6 +1422,10 @@
 				"rotate": [
 					{ "time": 0, "angle": 23.59, "curve": "stepped" },
 					{ "time": 0.3333, "angle": 23.59 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.3333, "x": 1, "y": 1 }
 				]
 			},
 			"bone8": {
@@ -1469,6 +1486,11 @@
 				"translate": [
 					{ "time": 0, "x": 41.58, "y": -191.5, "curve": "stepped" },
 					{ "time": 0.3333, "x": 41.58, "y": -191.5 }
+				]
+			},
+			"root": {
+				"translate": [
+					{ "time": 0, "x": 204, "y": 0 }
 				]
 			}
 		},
@@ -1583,6 +1605,10 @@
 				"translate": [
 					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
 					{ "time": 0.3333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 0.3333, "x": 1, "y": 1 }
 				]
 			},
 			"hand front": {
@@ -1859,6 +1885,10 @@
 					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
 					{ "time": 0.1666, "x": 0, "y": 0, "curve": "stepped" },
 					{ "time": 1.3333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.3333, "x": 1, "y": 1 }
 				]
 			},
 			"hand front": {
@@ -2234,6 +2264,10 @@
 					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
 					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
 					{ "time": 1.3333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.3333, "x": 1, "y": 1 }
 				]
 			},
 			"hand front": {
@@ -2362,6 +2396,12 @@
 				"rotate": [
 					{ "time": 0, "angle": 37.55, "curve": "stepped" },
 					{ "time": 2, "angle": 37.55 }
+				]
+			},
+			"root": {
+				"translate": [
+					{ "time": 0, "x": 447.26, "y": 0 },
+					{ "time": 2, "x": 432.08, "y": 0 }
 				]
 			}
 		}
@@ -2692,6 +2732,10 @@
 					{ "time": 0, "x": 0, "y": 0, "curve": "stepped" },
 					{ "time": 0.6666, "x": 0, "y": 0, "curve": "stepped" },
 					{ "time": 1.3333, "x": 0, "y": 0 }
+				],
+				"scale": [
+					{ "time": 0, "x": 1, "y": 1, "curve": "stepped" },
+					{ "time": 1.3333, "x": 1, "y": 1 }
 				]
 			},
 			"hand front": {

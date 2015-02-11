@@ -54,9 +54,9 @@ public class SimpleCharacterInput : RaycastCharacterInput
 			if (!jumpAndDownForDrop) dropFromPlatform = true;
 		}
 		
-		if (Input.GetKey(KeyCode.W) ) {
+		if (Input.GetKey(KeyCode.Space) ) {
 			jumpButtonHeld = true;
-			if (Input.GetKeyDown(KeyCode.W)) {
+			if (Input.GetKeyDown(KeyCode.Space)) {
 				if (jumpAndDownForDrop && Input.GetKey("down")) {
 					dropFromPlatform = true;
 				} else {
