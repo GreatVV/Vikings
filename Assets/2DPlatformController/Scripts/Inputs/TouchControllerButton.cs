@@ -24,7 +24,7 @@ public class TouchControllerButton : MonoBehaviour {
 	/// Called when the button is being held. Use this to change look.
 	/// </summary>
 	virtual public void Held() {
-		if (!isHeld) renderer.material.mainTexture = heldTexture;
+		if (!isHeld) GetComponent<Renderer>().material.mainTexture = heldTexture;
 		isHeld = true;
 	}
 
@@ -32,7 +32,7 @@ public class TouchControllerButton : MonoBehaviour {
 	/// Called when the button is let go. Use this to change look.
 	/// </summary>
 	virtual public void Released() {
-		renderer.material.mainTexture = normalTexture;
+		GetComponent<Renderer>().material.mainTexture = normalTexture;
 		isHeld = false;
 	}
 }

@@ -13,11 +13,11 @@ public class ModelAnimator : MonoBehaviour {
 	
 	void Start(){
 		// Set all animations to loop
-   		animation.wrapMode = WrapMode.Loop;
+   		GetComponent<Animation>().wrapMode = WrapMode.Loop;
    		// except jumping
-		if (animation["jump"] != null) {
-   			animation["jump"].wrapMode = WrapMode.Once;
-   			animation["jump"].layer = 1;
+		if (GetComponent<Animation>()["jump"] != null) {
+   			GetComponent<Animation>()["jump"].wrapMode = WrapMode.Once;
+   			GetComponent<Animation>()["jump"].layer = 1;
 		}
 
 		// Register listeners
@@ -48,37 +48,37 @@ public class ModelAnimator : MonoBehaviour {
 	}
 	
 	protected void Idle () {
-		animation.CrossFade("idle");
+		GetComponent<Animation>().CrossFade("idle");
 		CheckDirection();
 	}
 	
 	protected void Walk () {
-		animation.CrossFade("walk");
+		GetComponent<Animation>().CrossFade("walk");
 		CheckDirection();
 	}
 
 	protected void Run () {
-		animation.CrossFade("run");
+		GetComponent<Animation>().CrossFade("run");
 		CheckDirection();
 	}
 
 	protected void Jump() {
-		animation.CrossFade("jump");
+		GetComponent<Animation>().CrossFade("jump");
 		CheckDirection();
 	}
 	
 	protected void Fall() {
-		animation.CrossFade("fall");
+		GetComponent<Animation>().CrossFade("fall");
 		CheckDirection();
 	}
 	
 	protected void Hold() {
-		animation.CrossFade("hold");
+		GetComponent<Animation>().CrossFade("hold");
 		transform.localRotation = Quaternion.Euler (0.0f, 180.0f, 0.0f);
 	}
 	
 	protected void Climb() {
-		animation.CrossFade("walk");
+		GetComponent<Animation>().CrossFade("walk");
 		transform.localRotation = Quaternion.Euler (0.0f, 180.0f, 0.0f);
 	}
 		

@@ -67,16 +67,16 @@ public class UnBreakableBrick : Platform {
 	
 	private IEnumerator DoSpawn() {
 		hasSpawned = true;
-		renderer.material = hitMaterial;
-		spawnGameObject.renderer.enabled = true;
-		if (spawnGameObject.rigidbody != null) {
-			spawnGameObject.rigidbody.useGravity = true;
-			spawnGameObject.rigidbody.AddForce(spawnForce, ForceMode.VelocityChange);
+		GetComponent<Renderer>().material = hitMaterial;
+		spawnGameObject.GetComponent<Renderer>().enabled = true;
+		if (spawnGameObject.GetComponent<Rigidbody>() != null) {
+			spawnGameObject.GetComponent<Rigidbody>().useGravity = true;
+			spawnGameObject.GetComponent<Rigidbody>().AddForce(spawnForce, ForceMode.VelocityChange);
 		}
 		// We need to wait for a little while before activating the collider so the spawned
 		// object has a chance to get outside the brick.
 		yield return new WaitForSeconds (spawnActivateTime);
-		spawnGameObject.collider.enabled = true;
+		spawnGameObject.GetComponent<Collider>().enabled = true;
 	}
 
 	/// <summary>
@@ -84,8 +84,8 @@ public class UnBreakableBrick : Platform {
 	/// remove this if you aren't just sending an object straight up in to the air.
 	/// </summary>
 	private void DoBobble() {
-		if (spawnGameObject.rigidbody != null) {
-			spawnGameObject.rigidbody.AddForce(spawnForce / 2.0f, ForceMode.VelocityChange);
+		if (spawnGameObject.GetComponent<Rigidbody>() != null) {
+			spawnGameObject.GetComponent<Rigidbody>().AddForce(spawnForce / 2.0f, ForceMode.VelocityChange);
 		}
 	}
 

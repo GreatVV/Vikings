@@ -19,11 +19,11 @@ public class FallingPlatform : Platform {
 	}
 
 	override public Transform ParentOnStand (RaycastCharacterController character) {
-		if (rigidbody.velocity.y > velocityForFall) {
+		if (GetComponent<Rigidbody>().velocity.y > velocityForFall) {
 			return myTransform;
 		}
 		if (character.transform.parent != null) {
-			character.Velocity = new Vector2 (character.Velocity.x, rigidbody.velocity.y);
+			character.Velocity = new Vector2 (character.Velocity.x, GetComponent<Rigidbody>().velocity.y);
 			character.transform.parent = null;
 		}
 		return null;
@@ -31,7 +31,7 @@ public class FallingPlatform : Platform {
 
 	private IEnumerator Fall() {
 		yield return new WaitForSeconds(fallDelay);
-		rigidbody.isKinematic = false;
-		rigidbody.useGravity = true;
+		GetComponent<Rigidbody>().isKinematic = false;
+		GetComponent<Rigidbody>().useGravity = true;
 	}
 }

@@ -27,9 +27,9 @@ public class Collectable : MonoBehaviour {
 			// You could destroy but here we are just going to turn off rendering and collision
 			// This makes it easier to work with the particle system too
 			myRenderer.enabled = false;
-			if (myRenderer.collider != null) myRenderer.collider.enabled = false;
-			if (myRenderer.rigidbody != null) myRenderer.rigidbody.useGravity = false;
-			collider.enabled = false;
+			if (myRenderer.GetComponent<Collider>() != null) myRenderer.GetComponent<Collider>().enabled = false;
+			if (myRenderer.GetComponent<Rigidbody>() != null) myRenderer.GetComponent<Rigidbody>().useGravity = false;
+			GetComponent<Collider>().enabled = false;
 		}
 	}
 }

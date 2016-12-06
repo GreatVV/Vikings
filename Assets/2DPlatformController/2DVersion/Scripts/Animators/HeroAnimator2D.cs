@@ -24,22 +24,22 @@ public class HeroAnimator2D : MonoBehaviour {
 
 	void Start(){
 		// Set all animations to loop
-   		animation.wrapMode = WrapMode.Loop;
+   		GetComponent<Animation>().wrapMode = WrapMode.Loop;
    		// except a few
-		if (animation["jump"] != null) {
-   			animation["jump"].wrapMode = WrapMode.Once;
+		if (GetComponent<Animation>()["jump"] != null) {
+   			GetComponent<Animation>()["jump"].wrapMode = WrapMode.Once;
 		}
-		if (animation ["slide3"] != null) {
-			animation["slide3"].wrapMode = WrapMode.Once;
+		if (GetComponent<Animation>() ["slide3"] != null) {
+			GetComponent<Animation>()["slide3"].wrapMode = WrapMode.Once;
 		}
-		if (animation ["ledge_climb"] != null) {
-			animation["ledge_climb"].wrapMode = WrapMode.Clamp;
+		if (GetComponent<Animation>() ["ledge_climb"] != null) {
+			GetComponent<Animation>()["ledge_climb"].wrapMode = WrapMode.Clamp;
 		}
-		if (animation["stun2"] != null) {
-			animation["stun2"].wrapMode = WrapMode.Once;
+		if (GetComponent<Animation>()["stun2"] != null) {
+			GetComponent<Animation>()["stun2"].wrapMode = WrapMode.Once;
 		}
-		if (animation["crouch"] != null) {
-			animation["crouch"].wrapMode = WrapMode.Clamp;
+		if (GetComponent<Animation>()["crouch"] != null) {
+			GetComponent<Animation>()["crouch"].wrapMode = WrapMode.Clamp;
 		}
 
 		// Store root offset, we use this to reset position after animations this is only here to deal with a few rogue animations changing our root position
@@ -102,16 +102,16 @@ public class HeroAnimator2D : MonoBehaviour {
 	}
 	
 	protected void Idle (CharacterState previousState) {
-		animation.CrossFade ("idle");
+		GetComponent<Animation>().CrossFade ("idle");
 		CheckDirection();
 	}
 	
 	protected void Walk ()
 	{
 		if (playWalkAnimationsWhileSwimming || !controller.IsSwimming) {
-			animation.CrossFade ("run");
+			GetComponent<Animation>().CrossFade ("run");
 		} else {
-			animation.CrossFade("fall");
+			GetComponent<Animation>().CrossFade("fall");
 		}
 		CheckDirection();
 	}
@@ -119,9 +119,9 @@ public class HeroAnimator2D : MonoBehaviour {
 	protected void Run ()
 	{
 		if (playWalkAnimationsWhileSwimming || !controller.IsSwimming) {
-			animation.CrossFade ("run");
+			GetComponent<Animation>().CrossFade ("run");
 		} else {
-			animation.CrossFade("fall");
+			GetComponent<Animation>().CrossFade("fall");
 		}
 		CheckDirection();
 	}
@@ -129,69 +129,69 @@ public class HeroAnimator2D : MonoBehaviour {
 	protected void Slide ()
 	{
 		if (playWalkAnimationsWhileSwimming || !controller.IsSwimming) {
-			animation.CrossFade ("slide3");
+			GetComponent<Animation>().CrossFade ("slide3");
 		} else {
-			animation.CrossFade("fall");
+			GetComponent<Animation>().CrossFade("fall");
 		}
 		CheckDirection();
 	}
 
 	protected void Jump() {
-		animation.CrossFade("jump");
+		GetComponent<Animation>().CrossFade("jump");
 		CheckDirection();
 	}
 
 	protected void Airborne() {
-		animation.CrossFade("airborne");
+		GetComponent<Animation>().CrossFade("airborne");
 		CheckDirection();
 	}
 
 
 	protected void Fall() {
-		animation.CrossFade("fall");
+		GetComponent<Animation>().CrossFade("fall");
 		CheckDirection();
 	}
 	
 	protected void Hold(CharacterState previousState) {
-		if (previousState != CharacterState.CLIMBING) animation.CrossFade ("climb");
-		animation["climb"].speed = 0;
-		animation["ledge_climb"].speed = 0;
-		if (!animation.IsPlaying("ledge_climb")) {
+		if (previousState != CharacterState.CLIMBING) GetComponent<Animation>().CrossFade ("climb");
+		GetComponent<Animation>()["climb"].speed = 0;
+		GetComponent<Animation>()["ledge_climb"].speed = 0;
+		if (!GetComponent<Animation>().IsPlaying("ledge_climb")) {
 			transform.localPosition= new Vector3(0, -0.75f, -1);
 		}
 	}
 	
 	protected void Climb() {
-		animation["climb"].speed = 1;
-		animation.CrossFade("climb");
+		GetComponent<Animation>()["climb"].speed = 1;
+		GetComponent<Animation>().CrossFade("climb");
 		transform.localPosition = new Vector3(0, -0.75f,-1);
 	}
 
 	protected void ClimbTopUp() {
-		animation["ledge_climb"].speed = 1;
-		if ( animation["ledge_climb"].normalizedTime < 0.4f)  animation["ledge_climb"].normalizedTime = 0.4f;
-		animation.CrossFade("ledge_climb");
+		GetComponent<Animation>()["ledge_climb"].speed = 1;
+		if ( GetComponent<Animation>()["ledge_climb"].normalizedTime < 0.4f)  GetComponent<Animation>()["ledge_climb"].normalizedTime = 0.4f;
+		GetComponent<Animation>().CrossFade("ledge_climb");
 	}
 
 	protected void ClimbTopDown() {
 		transform.localRotation = Quaternion.Euler (0.0f, 0.0f, 0.0f);
-		animation["ledge_climb"].speed = -1;
-		animation["ledge_climb"].normalizedTime = 0.9f;
+		GetComponent<Animation>()["ledge_climb"].speed = -1;
+		GetComponent<Animation>()["ledge_climb"].normalizedTime = 0.9f;
 		// if ( animation["ledge_climb"].normalizedTime < 0.4f)  animation["ledge_climb"].normalizedTime = 0.4f;
-		animation.Play("ledge_climb");
+		GetComponent<Animation>().Play("ledge_climb");
 	}
 
 	protected void LedgeHang() {
-		animation.CrossFade("ledge_hang");
+		GetComponent<Animation>().CrossFade("ledge_hang");
 	}
 
 	protected void LedgeClimb() {
-		animation["ledge_climb"].speed = 1;
-		animation.Play("ledge_climb");
+		GetComponent<Animation>()["ledge_climb"].speed = 1;
+		GetComponent<Animation>().Play("ledge_climb");
 	}
 
 	protected void RopeHang() {
-		animation.CrossFade("rope_hang");
+		GetComponent<Animation>().CrossFade("rope_hang");
 	}
 
 	protected void RopeSwing() {
@@ -199,27 +199,27 @@ public class HeroAnimator2D : MonoBehaviour {
 	}
 
 	protected void RopeClimb() {
-		animation.CrossFade("rope_climb");
+		GetComponent<Animation>().CrossFade("rope_climb");
 	}
 	
 	protected void WallSlide() {
-		animation.CrossFade("wallslide");
+		GetComponent<Animation>().CrossFade("wallslide");
 	}
 	
 	protected void Crouch() {
-		animation.CrossFade("crouch3");
+		GetComponent<Animation>().CrossFade("crouch3");
 	}
 
 	protected void CrouchSlide() {
-		animation.CrossFade("groundslide");
+		GetComponent<Animation>().CrossFade("groundslide");
 	}
 
 	protected void Push() {
-		animation.CrossFade ("push");
+		GetComponent<Animation>().CrossFade ("push");
 	}
 	
 	protected void Pull() {
-		animation.CrossFade ("pull");
+		GetComponent<Animation>().CrossFade ("pull");
 	}
 
 	protected void Stunned(CharacterState previousState) {
@@ -230,7 +230,7 @@ public class HeroAnimator2D : MonoBehaviour {
 		    previousState != CharacterState.ROPE_SWING &&
 		    previousState != CharacterState.HOLDING &&
 		    previousState != CharacterState.CLIMBING) {
-			animation.CrossFade("stun2");
+			GetComponent<Animation>().CrossFade("stun2");
 		}
 	}
 

@@ -15,6 +15,6 @@ public class JumpOnHead : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		HitBox health = other.gameObject.GetComponent<HitBox>();
-		if (health != null) me.KillFromAbove(health, collider);
+		if (health != null) me.KillFromAbove(health, GetComponent<Collider>());
 	}
 }

@@ -9,11 +9,11 @@ public class BarrelPush : MonoBehaviour {
 
 	// Use this for initialization
 	void OnCollisionEnter(Collision info) {
-		if (Mathf.Abs (rigidbody.velocity.x) < sleepVelocity  && info.gameObject.layer == characterLayer) {
+		if (Mathf.Abs (GetComponent<Rigidbody>().velocity.x) < sleepVelocity  && info.gameObject.layer == characterLayer) {
 			if (info.gameObject.transform.position.x > transform.position.x) {
-				rigidbody.AddForce(-1 * pushForce, 0, 0, ForceMode.VelocityChange);
+				GetComponent<Rigidbody>().AddForce(-1 * pushForce, 0, 0, ForceMode.VelocityChange);
 			} else {
-				rigidbody.AddForce(pushForce, 0, 0, ForceMode.VelocityChange);
+				GetComponent<Rigidbody>().AddForce(pushForce, 0, 0, ForceMode.VelocityChange);
 			}
 		}
 	}

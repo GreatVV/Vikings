@@ -16,7 +16,7 @@ public class RopeCollider : Rope {
 	override public bool overrideAnimation{get {return true;} }
 	
 	override protected void DoStart() {
-		myRigidbody = transform.parent.gameObject.rigidbody;
+		myRigidbody = transform.parent.gameObject.GetComponent<Rigidbody>();
 	}
 	
 	

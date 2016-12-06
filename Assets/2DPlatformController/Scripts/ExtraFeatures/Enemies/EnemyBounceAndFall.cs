@@ -54,15 +54,15 @@ public class EnemyBounceAndFall : RaycastCharacterController , IEnemy {
 
 	public void Kill() {
 		hasHitPlayer = true;
-		collider.enabled = false;
+		GetComponent<Collider>().enabled = false;
 		StartCoroutine(DoDie ());
 	}
 	
 	private IEnumerator DoDie() {
 		Stun (((EnemyBounceAndFallInput)characterInput).stunTime);
-		if (renderer != null) renderer.enabled = false;
+		if (GetComponent<Renderer>() != null) GetComponent<Renderer>().enabled = false;
 		
-		if (particleSystem != null) particleSystem.Play ();
+		if (GetComponent<ParticleSystem>() != null) GetComponent<ParticleSystem>().Play ();
 		yield return new WaitForSeconds(((EnemyBounceAndFallInput)characterInput).stunTime);
 		Destroy(gameObject);
 	}
@@ -72,7 +72,7 @@ public class EnemyBounceAndFall : RaycastCharacterController , IEnemy {
 			// If we can find a character controller 
 			RaycastCharacterController hero = other.simplehealth.GetComponent<RaycastCharacterController>();
 			if (hero != null) {
-				me.collider.enabled = false;
+				me.GetComponent<Collider>().enabled = false;
 				Kill();
 				hero.Velocity = new Vector2(hero.Velocity.x, ((EnemyBounceAndFallInput)characterInput).bounceVelocity);
 			}

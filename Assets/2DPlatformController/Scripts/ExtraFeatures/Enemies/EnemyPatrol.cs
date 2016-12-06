@@ -62,8 +62,8 @@ public class EnemyPatrol : MonoBehaviour, IEnemy {
 	
 	private IEnumerator DoDie() {
 		velocity = 0.0f;
-		if (renderer != null) renderer.enabled = false;
-		if (particleSystem != null) particleSystem.Play ();
+		if (GetComponent<Renderer>() != null) GetComponent<Renderer>().enabled = false;
+		if (GetComponent<ParticleSystem>() != null) GetComponent<ParticleSystem>().Play ();
 		yield return new WaitForSeconds(stunTime);
 		Destroy(gameObject);
 	}
@@ -74,7 +74,7 @@ public class EnemyPatrol : MonoBehaviour, IEnemy {
 			// If we can find a character controller 
 			RaycastCharacterController hero = other.simplehealth.GetComponent<RaycastCharacterController>();
 			if (hero != null) {
-				me.collider.enabled = false;
+				me.GetComponent<Collider>().enabled = false;
 				Kill();
 				hero.Velocity = new Vector2(hero.Velocity.x, bounceVelocity);
 			}

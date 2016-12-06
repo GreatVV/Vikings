@@ -37,7 +37,7 @@ public class DecayingPlatform2D : Platform2D {
 	}
 	
 	private void Fall() {
-		rigidbody.isKinematic = false;
-		rigidbody.useGravity = true;
+		GetComponent<Rigidbody>().isKinematic = false;
+		GetComponent<Rigidbody>().useGravity = true;
 	}
 }

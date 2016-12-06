@@ -27,10 +27,10 @@ public class Collectable2D : MonoBehaviour {
 			// You could destroy but here we are just going to turn off rendering and collision
 			// This makes it easier to work with the particle system too
 			myRenderer.enabled = false;
-			if (myRenderer.gameObject.collider2D != null) myRenderer.gameObject.collider2D.enabled = false;
-			if (myRenderer.gameObject.rigidbody2D != null) myRenderer.gameObject.rigidbody2D.isKinematic = true;
-			collider2D.enabled = false;
-			if (rigidbody2D != null) rigidbody2D.isKinematic = true;
+			if (myRenderer.gameObject.GetComponent<Collider2D>() != null) myRenderer.gameObject.GetComponent<Collider2D>().enabled = false;
+			if (myRenderer.gameObject.GetComponent<Rigidbody2D>() != null) myRenderer.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+			GetComponent<Collider2D>().enabled = false;
+			if (GetComponent<Rigidbody2D>() != null) GetComponent<Rigidbody2D>().isKinematic = true;
 		}
 	}
 }
